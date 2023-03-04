@@ -9,23 +9,12 @@ export default function Banner() {
     const texte = document.querySelectorAll(".header_description")// Texte du paragraphe
     const texte_length = texte.length
 
-// Fonctionne pour modifier la couleur
 
 
 
-    /* VÉRIFIER LES ERREURS LORS DE LA PROCHAINE SESSION !!!
-        ESSAYER DE SIMPLEMENT LANCER UNE APPARAITION DU TEXTE AU CHARGEMENT
-    */
-
-    // setRed(255)
-    //     setBlue(255)
-    //     setGreen(255)
 
 
-    /* rendu de la bannière :
-    - Vidéo mp4 en fond
-    - Texte de présentation au-dessus
-    */
+
 
     return <div className={"header"}>
         <h1 className={"header_title"}>SpellShop</h1>
