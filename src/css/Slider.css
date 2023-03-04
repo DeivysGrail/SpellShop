@@ -1,0 +1,265 @@
+/* La plupart des selectors sont des surchages de ceux déjà existant dans react-responsive-carousel
+chaque surchage possèdera un commentaire ' surcharge '
+*/
+
+:root {
+    --border-tester: solid white 2px;
+}
+
+/* VIDEO */
+.div_for_video {
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+video {
+
+    position: absolute;
+    width: 100%;
+}
+
+/* IMAGE */
+
+.div_for_img {
+    /*position: relative;*/
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80vh;
+    transition: all 1.3s;
+}
+
+.div_for_img:hover h1 {
+    color: blue;
+}
+
+.div_for_img:hover img {
+    transform: scale(1.2) translate(-23vw, 20%);
+    z-index: 0;
+}
+
+.div_for_img img {
+    filter: drop-shadow(0 0 30px blueviolet);
+    margin-top: 6%;
+    border-radius: 30px;
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    transition: transform 400ms linear;
+}
+
+
+/* Nom du sort */
+
+.div_for_texte {
+
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+.div_for_title {
+    flex-wrap: wrap;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+.div_for_title h1 {
+    z-index: 2;
+    top: -6%;
+    position: absolute;
+    font-size: 100px;
+    background: -webkit-radial-gradient(white, rgba(93, 75, 7, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 20px orange);
+    -webkit-text-stroke: 2px black;
+    transition: transform 600ms ease;
+}
+
+.div_for_img:hover h1 {
+    transform: translate(20vw, -10%);
+}
+
+
+/* Description*/
+.div_for_img h2 {
+    z-index: 4;
+    text-shadow: 1px 1px 0 gold, 2px 2px 0 gold, 3px 3px 0 gold;
+    animation: black-to-grey 3s infinite;
+    transition: font-size 10ms ease, transform 600ms ease;
+    font-family: wizard-font, serif;
+}
+
+.div_for_img:hover h2 {
+    font-size: 60px;
+    transform: translate(20vw, -20vh);
+
+}
+
+
+/* Prix */
+.div_for_img h3 {
+    animation: black-to-grey infinite linear 3s;
+    text-shadow: 1px 1px 0 gold, 2px 2px 0 gold, 3px 3px 0 gold;
+    font-family: wizard-font, serif;
+    transform: translateY(-10px);
+    transition: transform 600ms ease;
+}
+
+.div_for_img h3:before {
+    content: "";
+    /*position: absolute;*/
+    /*top: -2px;*/
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    /*border: 2px solid gold;*/
+    border-radius: 2px;
+    z-index: 2;
+}
+
+.div_for_img:hover h3 {
+
+    font-size: 60px;
+    transform: translate(20vw, -20vh);
+
+}
+
+
+/* Boutons de contrôle */
+.boutons {
+    cursor: pointer;
+    bottom: 10%;
+    height: 60px;
+    width: 80px;
+    border: none;
+    filter: invert(1);
+}
+
+/* NEXT*/
+.div_bouton_suivant {
+    width: 100%;
+}
+
+.bouton_suivant {
+    background: url("../img/icons/arrow.svg") no-repeat left;
+    margin-right: 1%;
+    transform: rotate(180deg);
+    right: 10%;
+    position: absolute;
+    transition: transform 600ms ease, filter 800ms;
+
+}
+
+.bouton_suivant:hover {
+    transform: rotate(180deg) scale(1.1);
+    filter: invert(1);
+}
+
+
+/* PREVIOUS */
+.div_bouton_precedent {
+    width: 100%;
+}
+
+.bouton_precedent {
+    background: url("../img/icons/arrow.svg") no-repeat right;
+    z-index: 2;
+    position: absolute;
+    right: 15%;
+    transition: transform 600ms ease, filter 800ms;
+}
+
+.bouton_precedent:hover {
+    transform: scale(1.1);
+    filter: invert(1);
+}
+
+/* DOTS */
+
+.carousel .control-dots .dot {
+    opacity: 0.4;
+    transform: translateY(-30px);
+    width: 100px;
+    background: #FFF;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 8px #2b3e8f);
+    transition: all 300ms linear;
+}
+
+/* Surcharge */
+
+.carousel .control-dots .dot.selected {
+    width: 30px;
+    opacity: 1;
+    transition: all 300ms linear;
+    background: #d5d4d4;
+
+}
+
+/* surcharge*/
+
+/* Miniature*/
+.thumbs-wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.carousel .thumbs-wrapper .thumb {
+    border: none;
+    cursor: pointer;
+    filter: blur(2px);
+    transform: scale(0.7);
+    height: 20vh;
+    max-height: 20vh;
+    width: 150px;
+    margin: 0 40px 40px 40px;
+}
+
+
+/* Surcharge*/
+
+.carousel .thumbs-wrapper .thumb.selected {
+    transform: scale(1.2);
+    filter: blur(0);
+    height: auto;
+    width: auto;
+    border: none;
+}
+
+/* surcharge */
+
+.star-feedback {
+    height: 300px;
+    top: -200px
+}
+
+/* KEYFRAMES & FONT-FACE*/
+
+@keyframes black-to-grey {
+    0% {
+        color: #5a5a5a;
+    }
+    30% {
+        color: #7e7e7e;
+    }
+    60% {
+        color: #a4a4a4;
+    }
+    100% {
+        color: #5a5a5a;
+    }
+
+}

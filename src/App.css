@@ -1,0 +1,14 @@
+@import "css/Slider.css";
+@import "css/Navbar.css";
+@import "css/Banner.css";
+@import "css/MenuBurger.css";
+
+body {
+  background: #181520;
+  color:  white;
+  overflow-x: hidden;
+}
+.App {
+  text-align: center;
+}
+
