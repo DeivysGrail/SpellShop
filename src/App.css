@@ -1,7 +1,13 @@
-@import "css/Slider.css";
-@import "css/Navbar.css";
-@import "css/Banner.css";
-@import "css/MenuBurger.css";
+@import "css/Home_css/Banner.css";
+@import "css/Home_css/Slider.css";
+@import "css/Home_css/Navbar.css";
+@import "css/Home_css/MenuBurger.css";
+@import "css/Home_css/Feedback.css";
+@import "css/Home_css/Footer.css";
+@import "css/Createurs_css/Createurs.css";
+@import "css/Home_css/Category.css";
+@import "css/Createurs_css/CreateursBanner.scss";
+
 
 body {
   background: #181520;

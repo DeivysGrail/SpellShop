@@ -1,4 +1,4 @@
-import "../../css/Category.css"
+import "../../css/Home_css/Category.css"
 import fleche from "../../img/icons/category-arrow.svg"
 
 export default function Category() {

@@ -3,7 +3,7 @@ import Ganblin from "../../img/wizard_pdp/LordGanblin.png"
 import Aphrodine from "../../img/wizard_pdp/Aphrodine.png"
 import Dumbledargent from "../../img/wizard_pdp/Dumbledargent.png"
 import Elizard from "../../img/wizard_pdp/Elizard.png"
-import "../../css/Feedback.css"
+import "../../css/Home_css/Feedback.css"
 
 export default function Feedback() {
     const mages = [{
