@@ -12,7 +12,7 @@ export default function HomeFooter() {
                 </div>
                 <ul>
                     <li className={"footer-li"}><a href="src/components/HomeComponents/HomeFooter.js">CGU</a></li>
-                    <li className={"footer-li"}><Link  to={"/createurs"}>Qui sommes-nous ?</Link></li>
+                    <li  className={"footer-li"}><Link  to={"/createurs"}>Qui sommes-nous ?</Link></li>
                     <li className={"footer-li"}><a href="src/components/HomeComponents/HomeFooter.js">Compte</a></li>
                     <li className={"footer-li"}><a href="src/components/HomeComponents/HomeFooter.js">Informations légales</a></li>
                 </ul>

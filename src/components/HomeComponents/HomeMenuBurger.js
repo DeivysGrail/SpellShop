@@ -2,6 +2,8 @@ import "../../css/Home_css/MenuBurger.css"
 import {useState} from "react";
 import {push as Menu} from 'react-burger-menu'
 import Category from "./Category";
+import {BrowserRouter, Link} from "react-router-dom";
+import Login from "../../pages/Login";
 
 export default function HomeMenuBurger(props) {
 
@@ -35,7 +37,7 @@ export default function HomeMenuBurger(props) {
         >
             <main id={"page-wrap"}>
                 <ul className={"burger-menu-ul"}>
-                    <li><a id={"login"} href="/public " className={"menu-item"}>Se connecter</a></li>
+                    <li className={"menu-item"}><Link to={"/login"}>Se connecter</Link></li>
                     <Category/>
                     <li><a id={"learn"} href="/public" className={"menu-item"}>Apprendre à être mage</a>
                     </li>

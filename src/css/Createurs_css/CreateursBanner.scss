@@ -13,14 +13,23 @@
       .origine {
             display: flex;
             height: 50vh;
-            width: 10vw;
+            width: 15vw;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             pointer-events: auto;
 
             &:hover .origines__txt {
-                  background: #2b3e8f;
+                  color: steelblue;
+                  -webkit-text-stroke: 1px white !important;
+                  font-size: 50px;
+                  font-style: italic;
+                  border-bottom: double rgba(154, 150, 19, 0.76) 10px;
+                  border-top: double rgba(154, 150, 19, 0.76) 10px;
+                  transform: translateY(-40vh);
+                  background: rgba(0, 0, 0, 0.9);
+                  line-height: 5rem;
+                  padding: 0 30px;
             }
 
             .origine__img {
@@ -37,19 +46,21 @@
                   &:hover {
                         filter: invert(1);
                         opacity: 0.1;
+
+
                   }
             }
 
             .div-origine-description {
                   pointer-events: none;
-                  width: 80vw;
+                  width: 100vw;
+                  font-size: 50px;
 
                   .origines__txt {
-                        white-space: pre;
-                        line-height: 3rem;
+                        white-space: pre-line;
+                        transition: all 800ms ease;
                         -webkit-text-stroke: 2px black;
-                        font-size: 50px;
-                        font-family: wizard-font, Serif;
+                        font-family:wizard-font, serif;
                   }
 
 

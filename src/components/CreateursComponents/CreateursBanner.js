@@ -6,13 +6,11 @@ import "../../css/Createurs_css/CreateursBanner.scss"
 export default function CreateursBanner() {
 
 
-
-
-    return <div className={"CreateursBanner-root"}>
+    return <div id={"origines-link"} className={"CreateursBanner-root"}>
         {/*<AnimationOnScroll animateOnce={true} animateIn={"animate__animated animate__fadeInDownBig"}>*/}
                 <div className={"Banner--root"}>
                     <div className="origine" >
-                        <img className={"origine__img"} src={Origines}/>
+                        <img id={"origines-img"} className={"origine__img"} src={Origines}/>
                         <div className="div-origine-description">
                             <p className={"origines__txt"}>Voici les mages de Melas, petite ville à l'importance
                                 cruciale. <br/> C'est cette ville qui

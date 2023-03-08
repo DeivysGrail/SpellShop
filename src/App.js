@@ -1,18 +1,38 @@
 import './App.css';
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom"
 import Home from "./pages/Home";
 import Createurs from "./pages/Createurs"
+import Login from "./pages/Login";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
-    return (
-        <BrowserRouter>
-            <div className="App">
-                <Routes>
-                    <Route path={"/"} index element={<Home/>}/>
-                    <Route path={"/createurs"} element={<Createurs/>}/>
-                </Routes>
-            </div>
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <div className="App">
+        <ScrollToTop />
+        <Routes>
+          <Route path={"/"} element={<Home/>}/>
+          <Route path={"/createurs"} element={<Createurs/>}/>
+          <Route path={"/login"} element={<Login/>}/>
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
 export default App;
