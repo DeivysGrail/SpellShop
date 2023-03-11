@@ -1,9 +1,9 @@
-import ModalBox from "../components/LoginComponents/ModalBox";
+import LoginScreen from "../components/LoginComponents/LoginScreen";
 
 
 export default function Login() {
 
     return <div>
-        <ModalBox/>
+        <LoginScreen/>
     </div>
 }

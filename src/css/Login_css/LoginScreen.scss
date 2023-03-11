@@ -1,0 +1,37 @@
+
+
+.overlay-formulaire {
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-family: wizard-font;
+      font-size: 40px;
+      * {overflow: hidden;}
+      .login-bg-video { z-index: -1; }
+      .titre-du-formulaire { color: black;}
+      .formulaire {
+            input {
+                  border: solid black 1px;
+                  font-family: wizard-font2;
+                  font-size: 60px;
+                  letter-spacing: 2px;
+                  animation: changeColor 10s infinite;
+                  width: 60vw;
+                  border-radius: 50px;
+                  height: 10vh;
+            }
+            .champ-utilisateur { margin-bottom: 50px;}
+      }
+}
+
+@keyframes changeColor {
+      0%  {color: hsl(1, 60%, 40%);}
+      25%  {color: hsl(200, 60%, 30%);}
+      50%  {color: hsl(300, 60%, 30%);}
+      100%  {color: hsL(1, 60%, 40%);}
+
+
+}

@@ -1,6 +1,19 @@
+.bm-menu button {
+    background: transparent;
+    border: none;
+    font-family: unset;
+    font-size: unset;
+    font-weight: unset;
+    font-style: unset;
+    filter: none;
+    letter-spacing: 3px;
+}
+
+
 
 .bm-menu a {
     margin-left: 15%;
+    cursor: pointer;
     font-size: 30px;
     border-radius: 10px;
     border-bottom: solid 1px orangered;
