@@ -27,22 +27,12 @@ export default function HomeSlider() {
     }, {
         id: "floral-picture",
         image: Floral_invocation,
-        titre: "Invocation fleural",
+        titre: "Invocation floral",
         description: "Fais apparaître des fleurs",
         price: "400WD",
         color: "greenyellow"
     }]
-// {id:__| image:__| titre:__| description:__}
 
-
-// state :
-
-// comportements :
-
-
-    // A LA REPRISE, IL FAUT GÉRER LE STYLE DU CAROUSEL
-
-// render :
     return (<div className={"div_for_video"}>
             <video src={background_for_carousel} autoPlay loop muted></video>
             <Carousel

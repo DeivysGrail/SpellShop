@@ -1,0 +1,10 @@
+
+[
+  {
+        "id": 1,
+        "image": "../img/potions/potionDeJouvence.jpg",
+        "titre": "Potion de Jouvence",
+        "description": "Offre la vie éternelle",
+        "price": "7000WD",
+        "color": "cyan"}
+]

@@ -1,0 +1,9 @@
+[
+  {
+        "id": 1,
+        "image": "../img/spells/Floral_spell.jpg",
+        "titre": "Invocation floral",
+        "description": "Fais apparaître des fleurs",
+        "price": "400WD",
+        "color": "greenyellow"}
+]
