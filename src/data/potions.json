@@ -1,10 +1,52 @@
-
 [
   {
-        "id": 1,
-        "image": "../img/potions/potionDeJouvence.jpg",
-        "titre": "Potion de Jouvence",
-        "description": "Offre la vie éternelle",
-        "price": "7000WD",
-        "color": "cyan"}
+    "key": 1,
+    "nom": "Potion de jouvence",
+    "style":
+    {
+        "border":  "double cyan 10px"
+},
+    "prix": "5000 WD",
+    "miniature": "../img/potions/potionDeJouvence.jpg"
+  },
+  {
+    "key":  2,
+    "nom": "Potion de mort",
+    "style":
+    {
+        "border":  "double purple 10px"
+},
+    "prix": "2000 WD",
+    "miniature": "../img/potions/PotionDeMort.jpg"
+  },
+  {
+    "key":  3,
+    "nom": "Potion de boost",
+    "style":
+    {
+        "border":  "double darkred 10px"
+},
+    "prix": "900 WD",
+    "miniature": "../img/potions/PotionBoost.jpg"
+  },
+  {
+    "key":  4,
+    "nom": "Potion de mana",
+    "style":
+    {
+        "border":  "double steelblue 10px"
+},
+    "prix": "10000 WD",
+    "miniature": "../img/potions/PotionDeMana.jpg"
+  },
+  {
+    "key":  5,
+    "nom": "Potion de soin",
+    "style":
+    {
+        "border":  "double yellowgreen 10px"
+},
+    "prix": "1300 WD",
+    "miniature": "../img/potions/PotionDeSoin.jpg"
+  }
 ]
