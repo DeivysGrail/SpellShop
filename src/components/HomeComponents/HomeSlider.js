@@ -15,7 +15,7 @@ export default function HomeSlider() {
         image: Jouvence,
         titre: "Potion de Jouvence",
         description: "Offre la vie éternelle",
-        price: "7000WD",
+        price: "70000WD",
         color: "cyan"
     }, {
         id: 2,

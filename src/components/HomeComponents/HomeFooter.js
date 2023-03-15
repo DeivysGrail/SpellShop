@@ -1,5 +1,11 @@
 import '../../css/Home_css/Footer.css'
 import {Link} from "react-router-dom";
+import Wiztagram from "../../img/icons/Wiztagram.png"
+import Spellbook from "../../img/icons/SpellBook.png"
+import Snapcat from "../../img/icons/SnapCat.png"
+
+
+
 
 export default function HomeFooter() {
 
@@ -22,10 +28,9 @@ export default function HomeFooter() {
                     <h4>Nos réseaux</h4>
                 </div>
                 <ul className={"ul-reseaux"}>
-                    <li className={"footer-li"}><a><img src="src/components/HomeComponents/HomeFooter" alt=""/>Wiztagram</a></li>
-                    <li className={"footer-li"}><a><img src="src/components/HomeComponents/HomeFooter" alt=""/>Spellbook</a></li>
-                    <li className={"footer-li"}><a><img src="src/components/HomeComponents/HomeFooter" alt=""/>Pinterel</a></li>
-                    <li className={"footer-li"}><a><img src="src/components/HomeComponents/HomeFooter" alt=""/>Snapcat</a></li>
+                    <li className={"footer-li"}><a href={"https://instagram.com"}><img className={"img-reseaux"} src={Wiztagram}/></a><span className={"span-reseaux"}>Wiztagram</span></li>
+                    <li className={"footer-li"}><a href={"https://spellbook.com"}><img className={"img-reseaux"} src={Spellbook}/></a><span className={"span-reseaux"}>Spellbook</span></li>
+                    <li className={"footer-li"}><a href={"https://snapchat.com"}><img className={"img-reseaux"} src={Snapcat}/></a><span className={"span-reseaux"}>Snapcat</span></li>
                 </ul>
             </div>
             <div className="last-footer-ul">

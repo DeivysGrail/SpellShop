@@ -1,0 +1,32 @@
+[
+  {
+    "key": 1,
+    "nom": "DarkAxe",
+    "prix": "5000 WD",
+    "miniature": "../img/armes/DarkAxe.jpg"
+  },
+  {
+    "key":  2,
+    "nom": "BloodSword",
+    "prix": "2000 WD",
+    "miniature": "../img/armes/BloodSword.jpg"
+  },
+  {
+    "key":  3,
+    "nom": "DeathShield",
+    "prix": "900 WD",
+    "miniature": "../img/armes/DeathShield.jpg"
+  },
+  {
+    "key":  4,
+    "nom": "MagicOrb",
+    "prix": "10000 WD",
+    "miniature": "../img/armes/MagicOrb.jpg"
+  },
+  {
+    "key":  5,
+    "nom": "SharpGloves",
+    "prix": "1300 WD",
+    "miniature": "../img/armes/SharpGloves.jpg"
+  }
+]

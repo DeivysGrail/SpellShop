@@ -35,6 +35,32 @@
 
 }
 
+.ul-reseaux {
+    list-style-type: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.ul-reseaux img {
+    width: 3vw;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid black 1px
+}
+
+.span-reseaux {
+    opacity: 0;
+    font-size: 24px;
+    margin: 0 5px ;
+    animation: spanComeOn 7s linear forwards;
+
+}
+
+
+
+
 .ul-title {
     font-family: wizard-font;
     font-size: 20px ;
@@ -96,3 +122,8 @@
 
 }
 
+@keyframes spanComeOn {
+
+    from {opacity: 0}
+    to {opacity: 1}
+}

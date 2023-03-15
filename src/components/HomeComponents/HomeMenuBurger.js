@@ -43,7 +43,7 @@ export default function HomeMenuBurger(props) {
         >
             <main id={"page-wrap"}>
                 <ul className={"burger-menu-ul"}>
-                    <li className={"menu-item"} href={"/public"}><Link to={"/login"}>Se connecter</Link></li>
+                    <li className={"menu-item"}><Link to={"/login"}>Se connecter</Link></li>
                     <Category/>
                     <li><a id={"learn"} href="/public" className={"menu-item"}>Apprendre à être mage</a>
                     </li>

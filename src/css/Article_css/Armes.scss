@@ -1,0 +1,77 @@
+.arme-global-div {
+      background: url("../../img/armes/bg_weapons_shop.jpg") ;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      border-right:solid black 100px;
+      border-left:solid black 100px;
+      align-items: center;
+
+
+
+      .div-arme {
+            width: 20vw;
+            transition: all 400ms ease;
+      }
+
+      .div-arme:hover {
+            transform: scale(1.2);
+      }
+      .div-arme:hover img {
+            border: solid black 5px;
+            filter: drop-shadow(0 0 30px black);
+      }
+
+
+
+      .div-arme:hover img,
+      .div-arme:hover h1,
+      .div-arme:hover h2 {
+            border-radius: 10px;
+            transform:scale(1.4);
+            -webkit-text-stroke: 1px white;
+      }
+
+
+      img {
+            width: 20vw;
+            height: 40vh;
+            margin-top: 200px;
+            border: double black 10px;
+            border-radius: 100%;
+            transition: transform 400ms ease, border-radius 800ms ease, border 300ms ease-out, filter 1s linear;
+      }
+
+      h1, h2 {
+            font-size: 50px;
+            font-family: wizard-font;
+            letter-spacing: 5px;
+            color: black;
+            transition: all 400ms ease;
+
+      }
+
+      h1 {
+            border-radius: 0;
+            border-bottom: solid black 10px;
+      };
+
+
+
+
+      h2 {
+            transition: all 400ms ease;
+
+      }
+
+}
+
+@keyframes faire_avancer_le_content {
+      from {
+            transform: translate(0);
+      }
+      to {
+            transform: translate(17.3vw);
+      }
+}

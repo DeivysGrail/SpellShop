@@ -7,6 +7,7 @@ import {
 import Home from "./pages/Home";
 import Createurs from "./pages/Createurs"
 import Login from "./pages/Login";
+import Armes from "./pages/Armes";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -24,11 +25,12 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <ScrollToTop />
+        <ScrollToTop/>
         <Routes>
           <Route path={"/"} element={<Home/>}/>
           <Route path={"/createurs"} element={<Createurs/>}/>
           <Route path={"/login"} element={<Login/>}/>
+           <Route path={"/weapons"} element={<Armes/>}/>
         </Routes>
       </div>
     </BrowserRouter>
