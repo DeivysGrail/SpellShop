@@ -1,0 +1,99 @@
+.familier-global-div {
+      background: url("../../img/familiers/bg_familiers.jpg") no-repeat;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 20vw);
+      grid-template-rows: repeat(5, 30vh);
+      //grid-gap: 10px;
+
+
+      .div-familier {
+            cursor: pointer;
+                  width: 15vw;
+                  margin: 1rem;
+                  transition: all .2s ease;
+
+            &:hover {
+                  width: 16vw;
+                  transform: scale(1.1);
+                  filter: drop-shadow(0 0 30px grey);
+            }
+
+            &:hover .info-familier {
+                  display: grid;
+                  transform: scale(1.2    ) ;
+            }
+
+            img {
+                  width: 15vw;
+                  border-radius: 30px;
+                  filter: drop-shadow(0 0 10px white);
+                  transition: all .4s ease;
+
+            }
+
+
+            .info-familier {
+                  margin-left: 5px;
+                  text-align: center;
+                  padding: 10px 10%;
+                  background: rgba(5, 5, 11, 0.93);
+                  display: none;
+                  border-radius: 20px;
+                  justify-items: center;
+                  align-items: center;
+                  transition: all 3s linear;
+                  grid-template-columns: 1fr 100%;
+                  grid-template-rows: repeat(3, 10vh);
+
+                  h1 {
+                        border-bottom: solid white 1px;
+                        font-family: wizard-font;
+                        grid-row: 1;
+                        font-size: 40px;
+                  }
+
+                  h2 {
+                        font-size: 50px;
+                        white-space: nowrap;
+                        margin: 0;
+                        font-family: wizard-font;
+                        grid-row: 2;
+                  }
+
+                  p {
+                        grid-row: 3;
+                  }
+
+
+            }
+
+      }
+
+      .Grimmy {
+            grid-column: 2;
+            grid-row: 2;
+      }
+
+      .Minia {
+            grid-column: 3;
+            grid-row: 1;
+      }
+
+      .Glazrk {
+            grid-column: 4;
+            grid-row: 2;
+      }
+
+      .Chevalier {
+            grid-column: 1;
+            grid-row: 1;
+      }
+
+      .Wolfo {
+            grid-column: 5;
+            grid-row: 1;
+      }
+
+
+}

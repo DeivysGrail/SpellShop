@@ -27,9 +27,11 @@ export default function Armes() {
     }
 
     return <div className={"arme-global-div"}>
-        {ArmesData.map((arme) => (
+        {ArmesData.map((arme) => ( /* Itération à travers le fichier json */
+
             <div key={arme.nom} className={"div-arme"}>
                 <div className="image-arme-div">
+
                     <img className={arme.nom} src={getImage(arme)}/>
                 </div>
                 <div className="arme-nom-div">

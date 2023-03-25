@@ -1,13 +1,32 @@
+/* import de la page home */
+@import "css/Home_css/Navbar.css";
+@import "css/Home_css/Category.css";
+@import "css/Home_css/MenuBurger.css";
 @import "css/Home_css/Banner.css";
 @import "css/Home_css/Slider.css";
-@import "css/Home_css/Navbar.css";
-@import "css/Home_css/MenuBurger.css";
 @import "css/Home_css/Feedback.css";
 @import "css/Home_css/Footer.css";
-@import "css/Createurs_css/Createurs.css";
-@import "css/Home_css/Category.css";
-@import "css/Createurs_css/CreateursBanner.scss";
 
+/* import de la page de login*/
+@import "css/Login_css/LoginScreen.scss";
+
+/* import de la page des créateurs */
+@import "css/Createurs_css/Createurs.css";
+@import "css/Createurs_css/CreateursBanner.scss";
+@import "css/Createurs_css/Yasmae.css";
+@import "css/Createurs_css/Nixy.css";
+@import "css/Createurs_css/Nasmina.css";
+@import "css/Createurs_css/LightSister.css";
+@import "css/Createurs_css/Ismael.css";
+@import "css/Createurs_css/Ioltor.css";
+@import "css/Createurs_css/Enaline.css";
+@import "css/Createurs_css/DarkSister.css";
+
+/* import de la page arme */
+@import "css/Article_css/Armes.scss";
+
+/* import de la page potions*/
+@import "css/Article_css/Potions.scss";
 
 body {
   background: #181520;

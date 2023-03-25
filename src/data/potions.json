@@ -1,52 +1,132 @@
 [
   {
-    "key": 1,
     "nom": "Potion de jouvence",
-    "style":
-    {
-        "border":  "double cyan 10px"
-},
-    "prix": "5000 WD",
-    "miniature": "../img/potions/potionDeJouvence.jpg"
+    "classname": "JouvencePopo",
+    "key": 1,
+    "description": "Issue de la célèbre fontaine de Jouvence, cette potion vous conférera tout simplement la vie éternelle ",
+    "styleImg": {
+      "border": "double cyan 10px",
+      "box-shadow": "0 0 100px cyan"
+    },
+    "styleTxt": {
+      "color": "cyan",
+      "-webkit-text-stroke": "2px darkblue"
+    },
+    "styleDscrpt": {
+      "color": "white",
+      "-webkit-text-stroke": "1px black",
+      "box-shadow": "-3px 3px 20px 20px inset cyan",
+      "background": "rgba(87, 141, 155, 0.9 )",
+      "border-radius": "20px",
+      "border": "solid rgb(19, 221, 219) 2px"
+    },
+    "prix": "70.000 ₩",
+    "miniature": "../img/potions/potionDeJouvence.jpg",
+    "backgroundPotion": "../img/potions/bg_jouvence_potion.jpg"
   },
+
   {
-    "key":  2,
     "nom": "Potion de mort",
-    "style":
-    {
-        "border":  "double purple 10px"
-},
-    "prix": "2000 WD",
-    "miniature": "../img/potions/PotionDeMort.jpg"
+    "classname": "DeathPopo",
+    "key": 2,
+    "description":  "Mélange d'eau du Styx, de sang de Titan et d'un oeuf de dragon. Elle est ce qu'il y a de plus mortel ",
+    "styleImg": {
+      "border": "double purple 10px",
+      "box-shadow": "0 0 100px purple"
+    },
+    "styleTxt":  {
+      "color":  "blueviolet",
+      "-webkit-text-stroke": "2px black"
+    },
+    "styleDscrpt": {
+      "box-shadow": "-3px 3px 20px 20px inset purple",
+      "background": "rgb(65, 4, 77)",
+      "border-radius": "20px",
+      "border": "solid rgb(97, 8, 117) 2px",
+      "color":  "white",
+      "-webkit-text-stroke":  "2px black"
+    },
+
+    "prix": "20.000 ₩",
+    "miniature": "../img/potions/PotionDeMort.jpg",
+    "backgroundPotion": "../img/potions/bg_death_potion.jpg"
   },
+
   {
-    "key":  3,
     "nom": "Potion de boost",
-    "style":
-    {
-        "border":  "double darkred 10px"
-},
-    "prix": "900 WD",
-    "miniature": "../img/potions/PotionBoost.jpg"
+    "classname": "BoostPopo",
+    "key": 3,
+    "description":  "Cette potion boost les dégâts, la résistance, l'agilité, l'endurance, la force, la confiance en soi en plus de vous tenir évéillé pendant 2 ou 3 jours ",
+    "styleImg": {
+      "border": "double darkred 10px",
+      "box-shadow": "0 0 100px darkred"
+    },
+    "styleDscrpt": {
+      "box-shadow": "-3px 3px 20px 20px inset red",
+      "background": "darkred",
+      "border-radius": "20px",
+      "border": "solid rgb(199, 95, 95) 2px",
+      "color":  "white",
+      "-webkit-text-stroke":  "1px black"
+    },
+    "styleTxt":  {
+      "color":  "orange",
+      "-webkit-text-stroke": "4px darkslategrey"
+    },
+    "prix": "900 ₩",
+    "miniature": "../img/potions/PotionBoost.jpg",
+    "backgroundPotion": "../img/potions/bg_boost_potion.jpg"
   },
+
   {
-    "key":  4,
     "nom": "Potion de mana",
-    "style":
-    {
-        "border":  "double steelblue 10px"
-},
-    "prix": "10000 WD",
-    "miniature": "../img/potions/PotionDeMana.jpg"
+    "classname": "ManaPopo",
+    "key": 4,
+    "description":  "Lot de 3 potions de mana qui permettent d'utiliser n'importe quel sort pendant 5 minutes sans utiliser de mana",
+    "styleImg": {
+      "border": "double steelblue 10px",
+      "box-shadow": "0 0 100px steelblue"
+    },
+    "styleTxt":  {
+      "color":  "steelblue",
+      "-webkit-text-stroke": "2px antiquewhite"
+    },
+    "styleDscrpt": {
+      "box-shadow": "-3px 3px 20px 20px inset rgb(124, 128, 40)",
+      "background": "rgba(152, 155, 87, 0.9 )",
+      "border-radius": "20px",
+      "border": "solid rgb(70, 60, 10) 2px",
+      "color":  "white",
+      "-webkit-text-stroke":  "1px rgb(0,0,0)"
+    },
+    "prix": "2500 ₩",
+    "miniature": "../img/potions/PotionDeMana.jpg",
+    "backgroundPotion": "../img/potions/bg_mana_potion.jpg"
   },
+
   {
-    "key":  5,
     "nom": "Potion de soin",
-    "style":
-    {
-        "border":  "double yellowgreen 10px"
-},
-    "prix": "1300 WD",
-    "miniature": "../img/potions/PotionDeSoin.jpg"
+    "classname": "HealPopo",
+    "key": 5,
+    "description":  "Simple potion de soin qui soigne n'importe quelle blessure et douleur mais ne guérit pas du poison",
+    "styleImg": {
+      "border": "double yellowgreen 10px",
+      "box-shadow": "0 0 100px yellowgreen"
+    },
+    "styleTxt":  {
+      "color":  "#00ff09",
+      "-webkit-text-stroke": "3px rgb(50 150 120)"
+    },
+    "styleDscrpt": {
+      "box-shadow": "-3px 3px 20px 20px inset rgb(50, 169, 66)",
+      "background": "rgba(81, 215, 54, 0.9 )",
+      "border-radius": "20px",
+      "border": "solid greenyellow 2px",
+      "color":  "white",
+      "-webkit-text-stroke":  "0.8px black"
+    },
+    "prix": "800 ₩",
+    "miniature": "../img/potions/PotionDeSoin.jpg",
+    "backgroundPotion": "../img/potions/bg_heal_potion.jpg"
   }
 ]

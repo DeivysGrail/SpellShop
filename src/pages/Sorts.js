@@ -1,43 +1,43 @@
-import "../css/Article_css/Armes.scss"
+import "../css/Article_css/Sorts.scss"
 
 
-import BloodSword from "../img/armes/BloodSword.jpg";
-import DarkAxe from "../img/armes/DarkAxe.jpg";
-import DeathShield from "../img/armes/DeathShield.jpg";
-import MagicOrb from "../img/armes/MagicOrb.jpg";
-import SharpGloves from "../img/armes/SharpGloves.jpg";
-import ArmesData from "../data/armes.json";
+import Floral_spell from "../img/spells/Floral_spell.jpg";
+import IceBall from "../img/spells/IceBall.jpg";
+import ThunderBall from "../img/spells/ThunderBall.jpg";
+import Water_spell from "../img/spells/Water_spell.jpg";
+import RempartDeDefense from "../img/spells/RempartDeDefense.jpg";
+import SortsData from "../data/sorts.json";
 
 export default function Sorts() {
 
-    function getImage(arme) {
-        switch (arme.miniature) {
-            case "../img/armes/BloodSword.jpg":
-                return BloodSword;
-            case "../img/armes/DarkAxe.jpg":
-                return DarkAxe;
-            case "../img/armes/DeathShield.jpg":
-                return DeathShield;
-            case "../img/armes/MagicOrb.jpg":
-                return MagicOrb;
-            case "../img/armes/SharpGloves.jpg":
-                return SharpGloves;
+    function getImage(sort) {
+        switch (sort.miniature) {
+            case "../img/spells/Floral_spell.jpg":
+                return Floral_spell;
+            case "../img/spells/IceBall.jpg":
+                return IceBall;
+            case "../img/spells/ThunderBall.jpg":
+                return ThunderBall;
+            case "../img/spells/Water_spell.jpg":
+                return Water_spell;
+            case "../img/spells/RempartDeDefense.jpg":
+                return RempartDeDefense;
             default:
                 return "";
         }
     }
 
-    return <div className={"arme-global-div"}>
-        {ArmesData.map((arme) => (
-            <div key={arme.nom} className={"div-arme"}>
-                <div className="image-arme-div">
-                    <img className={arme.nom} src={getImage(arme)}/>
+    return <div className={"sort-global-div"}>
+        {SortsData.map((sort) => ( /* Itération à travers le fichier json */
+            <div className={`${sort.classname} div-sort`}>
+                <div className="image-sort-div">
+                    <img id={sort.nom} src={getImage(sort)}/>
                 </div>
-                <div className="arme-nom-div">
-                    <h1 className="nom-arme-h1">{arme.nom}</h1>
+                <div className="sort-nom-div">
+                    <h1 className="nom-sort-h1">{sort.nom}</h1>
                 </div>
-                <div className="prix-arme-div">
-                    <h2 className="prix-arme">{arme.prix}</h2>
+                <div className="prix-sort-div">
+                    <h2 className="prix-sort">{sort.prix}</h2>
                 </div>
             </div>
         ))}

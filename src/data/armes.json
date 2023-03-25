@@ -1,32 +1,36 @@
 [
   {
-    "key": 1,
     "nom": "DarkAxe",
-    "prix": "5000 WD",
+    "key": 1,
+    "prix": "5000 ₩",
     "miniature": "../img/armes/DarkAxe.jpg"
   },
+
   {
-    "key":  2,
     "nom": "BloodSword",
-    "prix": "2000 WD",
+    "key":  2,
+    "prix": "2000 ₩",
     "miniature": "../img/armes/BloodSword.jpg"
   },
+
   {
-    "key":  3,
     "nom": "DeathShield",
-    "prix": "900 WD",
+    "key":  3,
+    "prix": "900 ₩",
     "miniature": "../img/armes/DeathShield.jpg"
   },
+
   {
-    "key":  4,
     "nom": "MagicOrb",
-    "prix": "10000 WD",
+    "key":  4,
+    "prix": "10000 ₩",
     "miniature": "../img/armes/MagicOrb.jpg"
   },
+
   {
-    "key":  5,
     "nom": "SharpGloves",
-    "prix": "1300 WD",
+    "key":  5,
+    "prix": "1300 ₩",
     "miniature": "../img/armes/SharpGloves.jpg"
   }
 ]

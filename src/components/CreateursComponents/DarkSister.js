@@ -14,7 +14,7 @@ export default function DarkSister() {
 
 
      return <div className={"Darksister-div"}>
-        <AnimationOnScroll offset={350} duration={1.1}
+        <AnimationOnScroll offset={350} duration={0.5}
                            animateIn={"animate__flip "}
                            animateOut={"animate__fadeOutUp"}>
             <div className="div-img-main-createur">

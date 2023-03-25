@@ -1,11 +1,16 @@
-import {Carousel} from "react-responsive-carousel"
+import {Carousel} from "react-responsive-carousel" // Composant pour le carousel
+
+// Image des mages qui ont laissé un  commentaire + le fichier Feedback.css
 import Ganblin from "../../img/wizard_pdp/LordGanblin.png"
 import Aphrodine from "../../img/wizard_pdp/Aphrodine.png"
 import Dumbledargent from "../../img/wizard_pdp/Dumbledargent.png"
 import Elizard from "../../img/wizard_pdp/Elizard.png"
+
 import "../../css/Home_css/Feedback.css"
 
+// Représente la section des commentaires laissés par les clients
 export default function Feedback() {
+    // mages contient les données de tous les mages qui ont laissé un commentaire
     const mages = [{
         id: 1,
         nom: "Lord Ganblin",
@@ -46,26 +51,26 @@ export default function Feedback() {
             <div className="div-title-section">
                 <h1 className={"feedback-title"}>FeedBack</h1>
             </div>
-            <Carousel
-                    renderArrowNext={(clickHandler) =><div className={"div-next-button boutons-feedback"}><button onClick={clickHandler} className={"next-button"}></button></div>  }
+            <Carousel /* composant Carousel avec tous les props */
+      /* clickHandler est prédéfinie dans react responsive carousel*/ renderArrowNext={(clickHandler) =><div className={"div-next-button boutons-feedback"}><button onClick={clickHandler} /* gestion du bouton suivant*/ className={"next-button"}></button></div>  }
                     renderArrowPrev={(clickHandler, hasPrev) => hasPrev && <div className={"div-previous-button boutons-feedback"}><button onClick={clickHandler} className={"previous-button"}></button></div>}
-                    stopOnHover={true}
-                      infiniteLoop={true}
+                    stopOnHover={true} /* s'arrête lorsque le curseur est sur le carousel */
+                      infiniteLoop={true} /* Reviens à l'image 1 après la dernière image*/
                       className={"wizard-carousel"}
-                      axis={"vertical"}
-                      showStatus={false}
-                      showThumbs={false}
+                      axis={"vertical"} /* Carousel vertical */
+                      showStatus={false} /* Cache le '1/4'*/
+                      showThumbs={false} /* Cache les miniatures */
             >
-                {mages.map((element) => (
+                {mages.map((element) => ( /* Itération à travers les données de la variable mage */
                         <div className="div-of-each-wizard">
-                            <div style={{background: `${element.color}`}} className="div-pdp">
-                                <img src={element.pdp} alt="" className="pdp"/>
+                            <div style={{background: `${element.color}`}} className="div-pdp"> {/* container des photos de profils */}
+                                <img src={element.pdp} alt="" className="pdp"/> {/* photo de profil */}
                             </div>
-                            <div className="div-wizard-name">
-                                <h1 className="name">{element.nom}</h1>
+                            <div className="div-wizard-name"> {/* container des noms des sorciers*/}
+                                <h1 className="name">{element.nom}</h1> {/* Nom des sorciers*/}
                             </div>
-                            <div className="div-feedback">
-                                <p className="feedback">{element.feedback}</p>
+                            <div className="div-feedback"> {/* container des commentaires*/}
+                                <p className="feedback">{element.feedback}</p> {/* Commentaires*/}
                             </div>
                         </div>
                     )

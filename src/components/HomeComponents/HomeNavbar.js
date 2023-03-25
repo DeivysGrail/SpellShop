@@ -6,7 +6,7 @@ export default function HomeNavbar() {
 
     // render :
     return <div className={"navbar"}>
-        <ul className={"navbar_ul"}>
+        <ul className={"navbar_ul"}> {/*Renvoie vers différents onglets communément omnipresent sur une navbar */}
             <li><a href="/public">Accueil</a></li>
             <li><a href="/public">Boutique</a></li>
             <li><a href="/public">Nouveautés</a></li>

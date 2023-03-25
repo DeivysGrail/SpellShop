@@ -1,0 +1,45 @@
+.accessoire-global-div {
+            display: flex;
+      justify-content: center;
+      // FAIRE TOUT SOUS FORME D'UNE GRILLE REPEAT 2 50VH x2
+      .BouleDeCristal {
+            background: red;
+            width: 20vw;
+            img {
+                  width: 20vw;
+                  border:solid green 2px;
+            }
+
+            h1 {
+                  background: #2b3e8f;
+                  border:solid orange 2px;
+            }
+
+            h2 {
+                  background: #5a5a5a;
+            }
+      }
+
+
+
+}
+.image {
+  animation: apparition 1.3s ease-out forwards;
+}
+
+
+@keyframes apparition {
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

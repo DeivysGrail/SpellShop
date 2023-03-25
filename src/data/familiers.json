@@ -1,8 +1,8 @@
 [
         {
-    "nom": "Invocation florale",
-    "classname": "Floral_spell",
-    "classname-text": "Floral_spell-txt",
+    "nom": "Grimmy",
+    "classname": "Grimmy",
+    "classname-text": "Grimmy-txt",
           "description" : "un gentil petit monstre",
     "key": 1,
     "styleImg": {
@@ -22,14 +22,14 @@
       "border-radius": "20px",
       "border": "solid rgb(19, 221, 219) 2px"
     },
-    "prix": "4.000 ₩",
-    "miniature": "../img/spells/Floral_spell.jpg"
+    "prix": "20.000 ₩",
+    "miniature": "../img/familiers/Grimmy.jpg"
   },
 
         {
-    "nom": "IceBall",
-    "classname": "IceBall",
-    "classname-text": "IceBall-txt",
+    "nom": "Minia",
+    "classname": "Minia",
+    "classname-text": "Minia-txt",
           "description" :  "un gentil petit monstre",
     "key": 1,
     "styleImg": {
@@ -50,14 +50,14 @@
       "border-radius": "20px",
       "border": "solid rgb(19, 221, 219) 2px"
     },
-    "prix": "7.000 ₩",
-      "miniature": "../img/spells/IceBall.jpg"
+    "prix": "55.000 ₩",
+    "miniature": "../img/familiers/Minia.jpg"
   },
 
         {
-    "nom": "Rempart de défense",
-    "classname": "Rempart",
-    "classname-text": "Rempart-txt",
+    "nom": "Lancelot",
+    "classname": "Chevalier",
+    "classname-text": "Chevalier-txt",
           "description" :  "un gentil petit monstre",
     "key": 1,
     "styleImg": {
@@ -77,14 +77,14 @@
       "border-radius": "20px",
       "border": "solid rgb(19, 221, 219) 2px"
     },
-    "prix": "6.000 ₩",
-    "miniature": "../img/spells/RempartDeDefense.jpg"
+    "prix": "85.000 ₩",
+    "miniature": "../img/familiers/LeChevalierDechu.jpg"
   },
 
         {
-    "nom": "ThunderBall",
-    "classname": "ThunderBall",
-    "classname-text": "ThunderBall-txt",
+    "nom": "Wolfo",
+    "classname": "Wolfo",
+    "classname-text": "Wolfo-txt",
           "description" :  "un gentil petit monstre",
     "key": 1,
     "styleImg": {
@@ -103,14 +103,14 @@
       "border-radius": "20px",
       "border": "solid rgb(19, 221, 219) 2px"
     },
-    "prix": "9.000 ₩",
-    "miniature": "../img/spells/ThunderBall.jpg"
+    "prix": "50.000 ₩",
+    "miniature": "../img/familiers/Wolfo.jpg"
   },
 
         {
-    "nom": "WaterBall",
-    "classname": "WaterBall",
-    "classname-text": "Water_spell-txt",
+    "nom": "Glazrk",
+    "classname": "Glazrk",
+    "classname-text": "Glazrk-txt",
           "description" :  "un gentil petit monstre",
     "key": 1,
     "styleImg": {
@@ -129,7 +129,7 @@
       "border-radius": "20px",
       "border": "solid rgb(19, 221, 219) 2px"
     },
-    "prix": "7.000 ₩",
-    "miniature": "../img/spells/Water_spell.jpg"
+    "prix": "35.000 ₩",
+    "miniature": "../img/familiers/Glazrk.jpg"
   }
 ]

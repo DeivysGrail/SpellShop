@@ -1,44 +1,50 @@
-import "../css/Article_css/Armes.scss"
+import "../css/Article_css/Manuscrits.scss"
 
-import BloodSword from "../img/armes/BloodSword.jpg";
-import DarkAxe from "../img/armes/DarkAxe.jpg";
-import DeathShield from "../img/armes/DeathShield.jpg";
-import MagicOrb from "../img/armes/MagicOrb.jpg";
-import SharpGloves from "../img/armes/SharpGloves.jpg";
-import ArmesData from "../data/armes.json";
+import {AnimationOnScroll} from "react-animation-on-scroll";
+import "animate.css"
+import Bestiaire from "../img/manuscrits/Bestiaire.jpg";
+import Encyclopedie from "../img/manuscrits/L'encyclopédieDesSorts.jpg";
+import LaMagieParLordGanblin from "../img/manuscrits/LaMagieParLordGamblin.jpg";
+import LeManuelDuTemps from "../img/manuscrits/LeManuelDuTemps.jpg";
+import OdeAuxEnfers from "../img/manuscrits/OdeAuxEnfers.jpg";
+import ManuscritsData from "../data/manuscrits.json";
+
 
 export default function Manuscrits() {
 
-   function getImage(arme) {
-        switch (arme.miniature) {
-            case "../img/armes/BloodSword.jpg":
-                return BloodSword;
-            case "../img/armes/DarkAxe.jpg":
-                return DarkAxe;
-            case "../img/armes/DeathShield.jpg":
-                return DeathShield;
-            case "../img/armes/MagicOrb.jpg":
-                return MagicOrb;
-            case "../img/armes/SharpGloves.jpg":
-                return SharpGloves;
+    function getImage(manuscrit) { // Permet de retourner l'image correspondante au lien dans le fichier json
+        switch (manuscrit.miniature) {
+            case "../img/manuscrits/Bestiaire.jpg":
+                return Bestiaire;
+            case "../img/manuscrits/L'encylopédieDesSorts.jpg":
+                return Encyclopedie;
+            case "../img/manuscrits/LaMagieParLordGamblin.jpg":
+                return LaMagieParLordGanblin;
+            case "../img/manuscrits/LeManuelDuTemps.jpg":
+                return LeManuelDuTemps;
+            case "../img/manuscrits/OdeAuxEnfers.jpg":
+                return OdeAuxEnfers;
             default:
                 return "";
         }
     }
 
-    return <div className={"arme-global-div"}>
-        {ArmesData.map((arme) => (
-            <div key={arme.nom} className={"div-arme"}>
-                <div className="image-arme-div">
-                    <img className={arme.nom} src={getImage(arme)}/>
+    return <div className={"manuscrit-global-div"}>
+        {ManuscritsData.map((manuscrit) => ( /* Itération à travers le fichier json */
+            <AnimationOnScroll initiallyVisible={true} offset={100} duration={1.2} animateIn={"animate__slide"} animateOnce={true}>
+                <div key={manuscrit.nom} className={"div-manuscrit"}>
+                    <div className="image-manuscrit-div">
+                        <img className={manuscrit.classname} src={getImage(manuscrit)}/>
+                    </div>
+                    <div className="manuscrit-nom-div">
+                        <h1 className="nom-manuscrit-h1">{manuscrit.titre}</h1>
+                        <h2 className="nom-manuscrit-h1">Exemplaires disponibles : {manuscrit.exemplaires}</h2>
+                    </div>
+                    <div className="prix-manuscrit-div">
+                        <h3 className="prix-manuscrit">Prix : {manuscrit.prix}</h3>
+                    </div>
                 </div>
-                <div className="arme-nom-div">
-                    <h1 className="nom-arme-h1">{arme.nom}</h1>
-                </div>
-                <div className="prix-arme-div">
-                    <h2 className="prix-arme">{arme.prix}</h2>
-                </div>
-            </div>
+            </AnimationOnScroll>
         ))}
 
     </div>

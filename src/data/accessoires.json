@@ -1,3 +1,12 @@
-{
+[
+  {
+    "nom": "Boule de crystal en diamant violet",
+    "key": 1,
+    "classname": "BouleDeCristal",
+    "prix": "5000 ₩",
+    "miniature": "../img/accessoires/BouleDeCristal.jpg",
+    "enStock": 4
+  }
 
-}
+
+]
