@@ -5,6 +5,8 @@ import DarkAxe from "../img/armes/DarkAxe.jpg"
 import DeathShield from "../img/armes/DeathShield.jpg"
 import MagicOrb from "../img/armes/MagicOrb.jpg"
 import SharpGloves from "../img/armes/SharpGloves.jpg"
+import Back from "../components/Back";
+
 
 
 export default function Armes() {
@@ -27,6 +29,7 @@ export default function Armes() {
     }
 
     return <div className={"arme-global-div"}>
+        <Back></Back>
         {ArmesData.map((arme) => ( /* Itération à travers le fichier json */
 
             <div key={arme.nom} className={"div-arme"}>

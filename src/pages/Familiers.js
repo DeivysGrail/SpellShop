@@ -1,4 +1,5 @@
 import "../css/Article_css/Familiers.scss"
+import Back from "../components/Back"
 
 import Glazrk from "../img/familiers/Glazrk.jpg";
 import Grimmy from "../img/familiers/Grimmy.jpg";
@@ -26,6 +27,9 @@ export default function Familiers() {
     }
 
     return <div className={"familier-global-div"}>
+        <div style={{position: "absolute", transform: "translateX(30vh)"}}>
+        <Back/>
+        </div>
         {InvocationsData.map((familier) => ( /* Itération à travers le fichier json */
             <div key={familier.className} className={`div-familier ${familier.classname}`}>
                 <div className={`image-familier-div `}>

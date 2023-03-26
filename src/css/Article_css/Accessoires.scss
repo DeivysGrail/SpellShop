@@ -1,38 +1,173 @@
 .accessoire-global-div {
-            display: flex;
+      background: rgba(144, 231, 255, 0.76);
+      display: grid;
+      grid-template: repeat(auto-fill, 40vh)/ repeat(2, 50vw);
       justify-content: center;
-      // FAIRE TOUT SOUS FORME D'UNE GRILLE REPEAT 2 50VH x2
+
+      // Div de la boule de cristaL
       .BouleDeCristal {
-            background: red;
-            width: 20vw;
+            margin-top: 10px;
+            background: #d848ee;
+            box-shadow: 30px 0 50px 20px #1c1b1b;
+            animation: apparitionDeGaucheADroite 1.3s ease-out forwards;
+            width: 100%;
+            transition: all .7s ease-out;
+            position: relative;
+            border-radius: 2px;
+
+
+            &:hover {
+                  transform: scale(1.01);
+                  box-shadow: 30px 0 50px 40px #1c1b1b;
+
+            }
+
+
             img {
-                  width: 20vw;
-                  border:solid green 2px;
+                  border: solid black 2px;
+                  grid-area: 1 / 1 / 1 / 2;
+                  width: 15vw;
+                  border-radius: 20px;
+
+
             }
 
             h1 {
-                  background: #2b3e8f;
-                  border:solid orange 2px;
+                  letter-spacing: 2px;
+                  color: black;
+                  font-family: wizard-font;
+                  -webkit-text-stroke: 0.4px white;
             }
 
             h2 {
-                  background: #5a5a5a;
+                  position: absolute;
+                  right: 0;
+                  margin-right: 5%;
+                  top: 20%;
+                  font-size: 50px;
+                  font-family: wizard-font;
+                  -webkit-text-stroke: 1px black;
             }
       }
 
+      .Baguette {
+            background: #c4a987;
+            box-shadow: 30px 0 50px 20px #1c1b1b;
+            animation: apparitionDeDroiteAGauche 1.3s ease-out forwards;
+            width: 100%;
+            transition: all .7s ease;
+            position: relative;
+            border-radius: 2px;
+            grid-area: 2 / 1;
+
+            &:hover {
+                  transform: scale(1.01);
+                  box-shadow: 30px 0 50px 40px #1c1b1b;
+
+            }
+
+
+            img {
+                  border: solid black 2px;
+                  width: 15vw;
+                  border-radius: 20px;
+
+
+            }
+
+            h1 {
+                  letter-spacing: 2px;
+                  color: black;
+                  font-family: wizard-font;
+                  -webkit-text-stroke: 0.4px white;
+            }
+
+            h2 {
+                  position: absolute;
+                  right: 0;
+                  margin-right: 5%;
+                  top: 20%;
+                  font-size: 50px;
+                  font-family: wizard-font;
+                  -webkit-text-stroke: 1px black;
+            }
+
+
+      }
+      FAIRE PAGE PROJET NON FINI + PAGE ERREUR
+
+      .Balai {
+            background: #112047;
+            box-shadow: 30px 0 50px 20px #1c1b1b;
+            animation: apparitionDeGaucheADroite 1.3s ease-out forwards;
+            width: 100%;
+            transition: all .7s ease-in-out;
+            position: relative;
+            border-radius: 2px;
+            grid-area: 3 / 2;
+
+            &:hover {
+                  transform: scale(1.01);
+                  box-shadow: 30px 0 50px 40px #1c1b1b;
+
+            }
+
+
+            img {
+                  border: solid black 2px;
+                  grid-area: 1 / 1 / 1 / 2;
+                  width: 15vw;
+                  border-radius: 20px;
+
+
+            }
+
+            h1 {
+                  letter-spacing: 2px;
+                  color: black;
+                  font-family: wizard-font;
+                  -webkit-text-stroke: 0.4px white;
+            }
+
+            h2 {
+                  position: absolute;
+                  right: 0;
+                  margin-right: 5%;
+                  top: 20%;
+                  font-size: 50px;
+                  font-family: wizard-font;
+                  -webkit-text-stroke: 1px black;
+            }
+
+
+      }
 
 
 }
-.image {
-  animation: apparition 1.3s ease-out forwards;
+
+
+@keyframes apparitionDeGaucheADroite {
+
+      from {
+            opacity: 0;
+            translate: -1000px;
+      }
+      to {
+            translate: 0;
+            opacity: 0.95;
+      }
 }
 
+@keyframes apparitionDeDroiteAGauche {
 
-@keyframes apparition {
-
-
-
-
+      from {
+            opacity: 0;
+            translate: 1000px;
+      }
+      to {
+            translate: 0;
+            opacity: 0.95;
+      }
 
 
 }

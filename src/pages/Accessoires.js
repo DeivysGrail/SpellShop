@@ -1,8 +1,8 @@
 import "../css/Article_css/Accessoires.scss"
+import Back from "../components/Back";
 import BouleDeCristal from "../img/accessoires/BouleDeCristal.jpg";
-import bg_objets from "../img/accessoires/bg_accessoires.jpg"
-// import DarkAxe from "../img/accessoires/DarkAxe.jpg";
-// import DeathShield from "../img/accessoires/DeathShield.jpg";
+import Balai from "../img/accessoires/Balai.jpg";
+import Baguette from "../img/accessoires/Baguette.jpg";
 // import MagicOrb from "../img/accessoires/MagicOrb.jpg";
 // import SharpGloves from "../img/accessoires/SharpGloves.jpg";
 import ArmesData from "../data/accessoires.json";
@@ -13,10 +13,10 @@ export default function Accessoires() {
         switch (accessoire.miniature) {
             case "../img/accessoires/BouleDeCristal.jpg":
                 return BouleDeCristal;
-            // case "../img/accessoires/DarkAxe.jpg":
-            //     return DarkAxe;
-            // case "../img/accessoires/DeathShield.jpg":
-            //     return DeathShield;
+            case "../img/accessoires/Balai.jpg":
+                return Balai;
+            case "../img/accessoires/Baguette.jpg":
+                return Baguette;
             // case "../img/accessoires/MagicOrb.jpg":
             //     return MagicOrb;
             // case "../img/accessoires/SharpGloves.jpg":
@@ -26,11 +26,8 @@ export default function Accessoires() {
         }
     }
 
-    return <div className={"accessoire-global-div"} style={{
-        background: `url("${bg_objets}")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center"
-    }}>
+    return <div className={"accessoire-global-div"}>
+        <Back></Back>
         {ArmesData.map((accessoire) => (
             <div key={accessoire.nom} className={`image div-accessoire ${accessoire.classname}`}>
                 <div className="image-accessoire-div">

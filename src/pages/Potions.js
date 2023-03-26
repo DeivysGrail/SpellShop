@@ -1,4 +1,5 @@
 import "../css/Article_css/Potions.scss"
+import Back from "../components/Back"
 
 // import de tous les fichiers jpg + potion.json
 import Jouvence from "../img/potions/potionDeJouvence.jpg";
@@ -60,6 +61,7 @@ export default function Potions() {
 
 
     return <div className="global-div-potion">
+        <Back></Back>
         {PotionsData.map((potion) => (  /* Itère à travers 'potions.json pour retourner les informations de chaque article'*/
            /* Retourne le fond d'écran de chaque div correspondante à l'article*/
             <div style={{

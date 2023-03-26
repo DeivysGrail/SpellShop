@@ -6,6 +6,20 @@
     "prix": "5000 ₩",
     "miniature": "../img/accessoires/BouleDeCristal.jpg",
     "enStock": 4
+  },{
+    "nom": "Baguette de niveau 7 avec étui",
+    "key": 1,
+    "classname": "Baguette",
+    "prix": "9000 ₩",
+    "miniature": "../img/accessoires/Baguette.jpg",
+    "enStock": 2
+  },{
+    "nom": "Balai de type nimbus 4000",
+    "key": 1,
+    "classname": "Balai",
+    "prix": "15000 ₩",
+    "miniature": "../img/accessoires/Balai.jpg",
+    "enStock": 20
   }
 
 

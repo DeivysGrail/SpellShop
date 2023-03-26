@@ -7,6 +7,7 @@ import ThunderBall from "../img/spells/ThunderBall.jpg";
 import Water_spell from "../img/spells/Water_spell.jpg";
 import RempartDeDefense from "../img/spells/RempartDeDefense.jpg";
 import SortsData from "../data/sorts.json";
+import Back from "../components/Back"
 
 export default function Sorts() {
 
@@ -28,6 +29,7 @@ export default function Sorts() {
     }
 
     return <div className={"sort-global-div"}>
+        <Back></Back>
         {SortsData.map((sort) => ( /* Itération à travers le fichier json */
             <div className={`${sort.classname} div-sort`}>
                 <div className="image-sort-div">

@@ -8,6 +8,7 @@ import LaMagieParLordGanblin from "../img/manuscrits/LaMagieParLordGamblin.jpg";
 import LeManuelDuTemps from "../img/manuscrits/LeManuelDuTemps.jpg";
 import OdeAuxEnfers from "../img/manuscrits/OdeAuxEnfers.jpg";
 import ManuscritsData from "../data/manuscrits.json";
+import Back from "../components/Back"
 
 
 export default function Manuscrits() {
@@ -30,6 +31,7 @@ export default function Manuscrits() {
     }
 
     return <div className={"manuscrit-global-div"}>
+        <Back/>
         {ManuscritsData.map((manuscrit) => ( /* Itération à travers le fichier json */
             <AnimationOnScroll initiallyVisible={true} offset={100} duration={1.2} animateIn={"animate__slide"} animateOnce={true}>
                 <div key={manuscrit.nom} className={"div-manuscrit"}>
