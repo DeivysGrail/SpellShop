@@ -1,3 +1,16 @@
+# Explication !
+
+Ce site est un projet personnel pour apprendre React et avoir un premier gros projet. 
+Il m'a plutôt été bénéfique car j'ai découvert React ainsi que de nombreuses librairie. J'ai appris les bases de  `react-router`, `AnimationOnScroll`  `react-responsive-carousel` et encore d'autres. J'ai aussi mit les pieds dans Sass.  
+
+# Conclusion
+J'ai beaucoup appris grâce à ce projet mais je suis aussi un peu déçu, je n'ai pas fais la partie responsive et j'ai baclé la fin, mais c'est pour la bonne cause ! Un nouveau projet arrive. 
+
+# PS :
+Je reviendrai sur ce site lorsque j'aurai besoin de m'entrainer à d'autres sur d'autres notions
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
